@@ -4,6 +4,7 @@
  */
 package tagparser;
 
+import tagparser.cocurrent.TagParserConcurrent;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ public class Test {
     }
     
     private static void testConcurrent() {
-        new TagParserConcurrent("/home/pchel/Music").parse();
+        new TagParserConcurrent("/home/pchel/Music").start();
     }
     
     
